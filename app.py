@@ -16,7 +16,7 @@ Upload your monthly budget in csv format. To get more accurate insight upload mo
 # Upload CSV data
 with st.sidebar.header('1. Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
-    st.sidebar.markdown("""
+    
 
 # Pandas Profiling Report
 if uploaded_file is not None:
