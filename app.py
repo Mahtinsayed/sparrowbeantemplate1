@@ -6,20 +6,17 @@ from streamlit_pandas_profiling import st_profile_report
 
 # Web App Title
 st.markdown('''
-# **Earning vs Expense Template**
+# **Budget Manager Template**
 
-This is the **Earning vs Expense template** by Sparrowbean using the **pandas-profiling** library.
+Upload your monthly budget in csv format. To get more accurate insight upload more than 6 months budget.
 
-**Credit:** App built in `Python` + `Streamlit` 
----
+
 ''')
 
 # Upload CSV data
 with st.sidebar.header('1. Upload your CSV data'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
     st.sidebar.markdown("""
-[Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
-""")
 
 # Pandas Profiling Report
 if uploaded_file is not None:
